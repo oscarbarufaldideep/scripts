@@ -77,7 +77,13 @@ git clone https://github.com/gkbrk/slowloris.git
 echo -n "===INSTALACAO GOLDENEYE==="
 git clone https://github.com/jseidl/GoldenEye.git
 
-
+echo -n "===INSTALACAO spiderfoot==="
+wget https://github.com/smicallef/spiderfoot/archive/v4.0.tar.gz
+tar zxvf v4.0.tar.gz
+cd spiderfoot-4.0
+pip3 install -r requirements.txt
+cd ..
+ 
 echo -n "===INSTALACAO slowhttptest==="
 sudo apt install slowhttptest -y
 
