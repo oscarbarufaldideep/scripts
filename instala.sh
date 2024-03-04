@@ -87,6 +87,15 @@ git clone https://github.com/m3n0sd0n4ld/GooFuzz.git
 echo -n "===INSTALACAO httprobe==="
 sudo apt install httprobe
 
+git clone https://github.com/projectdiscovery/httpx.git
+cd httpx/cmd/httpx
+go build .
+mv httpx /usr/local/bin/
+cd ..
+cd ..
+cd ..
+sudo apt install httpx-toolkit
+
 echo -n "===INSTALACAO Sn1per===="
 git clone https://github.com/1N3/Sn1per
 cd Sn1per
