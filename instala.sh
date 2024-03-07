@@ -5,7 +5,6 @@ sudo apt update && sudo apt upgrade -y
 clear
 echo -n "Iniciando a Instalacao dos APlicativos :"
 
-
 echo -n "===INSTALACAO AQUATONE==="
 wget https://github.com/michenriksen/aquatone/releases/download/v1.7.0/aquatone_linux_amd64_1.7.0.zip
 unzip aquatone_linux_amd64_1.7.0.zip
@@ -20,7 +19,6 @@ echo -n "===INSTALACAO OSINT Maigret==="
 git clone https://github.com/soxoj/maigret && cd maigret
 sudo pip3 install -r requirements.txt
 cd ..
-
 
 echo -n "===INSTALACAO FINDOMAIN==="
 curl -LO https://github.com/findomain/findomain/releases/latest/download/findomain-linux-i386.zip
@@ -45,10 +43,6 @@ git clone https://github.com/gophish/gophish.git
 cd gophish
 go build
 cd ..
-
-echo -n "===Installing Tor Browser on Kali Linux==="
-sudo apt install -y tor torbrowser-launcher
-sudo torbrowser-launcher
 
 echo -n "===INSTALACAO TURBOSEARCH==="
 pip3 install git+https://github.com/helviojunior/turbosearch.git#egg=turbosearch
@@ -117,7 +111,12 @@ sudo apt install zaproxy
 echo -n "===###INSTALAÇÃO Slowloris ###NEGAÇÃO DE SERVIÇO"
 git clone https://github.com/gkbrk/slowloris.git
 
-
+echo -n "===###INSTALAÇÃO Slowloris ###WEBCOPILOT"
+git clone https://github.com/h4r5h1t/webcopilot 
+cd webcopilot
+chmod +x webcopilot install.sh 
+mv webcopilot /usr/bin/ 
+./install.sh
 
 
 
