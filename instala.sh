@@ -2,6 +2,43 @@
 #Script para Realizar Instalacao de Ambiente
 sudo apt update && sudo apt upgrade -y
 
+
+sudo apt update && sudo apt install -y nmap nikto sqlmap uniscan jq curl siege
+go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
+go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
+pip install arjun
+
+git clone https://github.com/1N3/Sn1per.git ~/tools/sn1per
+cd ~/tools/sn1per && sudo bash install.sh
+
+git clone https://github.com/six2dez/reconftw.git ~/reconftw
+cd ~/reconftw && sudo bash install.sh
+
+git clone https://github.com/gkbrk/slowloris.git ~/tools/slowloris
+cd ~/tools/slowloris && sudo chmod +x slowloris.py
+
+sudo nuclei -up
+sudo subfinder -up
+sudo httpx -up
+sudo apt full-upgrade -y
+
+exec bash
+
+which subfinder
+which httpx
+which nuclei
+which nmap
+which nikto
+which sqlmap
+which uniscan
+which arjun
+which siege
+which sniper
+which slowloris
+
+
+
 clear
 echo -n "Iniciando a Instalacao dos APlicativos :"
 
