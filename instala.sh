@@ -68,6 +68,19 @@ cd sherlock
 python3 -m pip install -r requirements.txt
 cd /home/kali
 
+go install github.com/projectdiscovery/notify/cmd/notify@latest
+go install github.com/tomnomnom/gf@latest
+go install github.com/lc/gau@latest
+go install github.com/hakluke/hakip2host@latest
+go install github.com/lc/nmapurls@latest
+go install github.com/tomnomnom/unfurl@latest
+go install github.com/jaeles-project/gospider@latest
+go install github.com/OWASP/Amass/v3/...@latest
+go install github.com/tomnomnom/assetfinder@latest
+go install github.com/tomnomnom/waybackurls@latest
+go install github.com/tomnomnom/anew@latest
+go install github.com/Emoe/kxss@latest
+
 echo -n "===INSTALACAO OWASP ZAP==="
 sudo apt install zaproxy -y
 
